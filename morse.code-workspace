@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "k3ng_cw_keyer-pio",
+			"path": "k3ng_cw_keyer-pio"
+		},
+		{
+			"name": "250410-141340-nanoatmega328",
+			"path": "../../PlatformIO/Projects/250410-141340-nanoatmega328"
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"fredlam",
+			"fredlam's",
+			"Kaan",
+			"Keyer",
+			"Microcontroller",
+			"reichelt"
+		]
+	}
+}

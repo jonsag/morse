@@ -1,0 +1,288 @@
+
+
+void loop_element_lengths(float lengths, float additional_time_ms, int speed_wpm_in)
+{
+
+#if defined(FEATURE_SERIAL) && !defined(OPTION_DISABLE_SERIAL_PORT_CHECKING_WHILE_SENDING_CW)
+    loop_element_lengths_breakout_flag = 1;
+#endif // FEATURE_SERIAL
+
+#if defined(DEBUG_LOOP_ELEMENT_LENGTHS)
+    debug_serial_port->println("loop_element_lengths: enter");
+#endif
+
+    float element_length;
+
+    if (lengths <= 0)
+    {
+        return;
+    }
+
+#if defined(FEATURE_FARNSWORTH)
+
+    if ((lengths == 1) && (speed_wpm_in == 0))
+    {
+        element_length = additional_time_ms;
+    }
+    else
+    {
+        if (speed_mode == SPEED_NORMAL)
+        {
+            element_length = 1200 / speed_wpm_in;
+        }
+        else
+        {
+            element_length = qrss_dit_length * 1000;
+        }
+    }
+
+#else  // FEATURE_FARNSWORTH
+    if (speed_mode == SPEED_NORMAL)
+    {
+        element_length = 1200 / speed_wpm_in;
+    }
+    else
+    {
+        element_length = qrss_dit_length * 1000;
+    }
+#endif // FEATURE_FARNSWORTH
+
+    unsigned long ticks;
+    if ((long(element_length * lengths * 1000) + long(additional_time_ms * 1000)) < 0)
+    {
+        return;
+    }
+    else
+    {
+        ticks = long(element_length * lengths * 1000) + long(additional_time_ms * 1000); // improvement from Paul, K1XM
+    }
+    unsigned long start = micros();
+
+#if defined(FEATURE_SERIAL) && !defined(OPTION_DISABLE_SERIAL_PORT_CHECKING_WHILE_SENDING_CW)
+    while (((micros() - start) < ticks) && (service_tx_inhibit_and_pause() == 0) && loop_element_lengths_breakout_flag)
+    {
+#else
+    while (((micros() - start) < ticks) && (service_tx_inhibit_and_pause() == 0))
+    {
+#endif
+
+        check_ptt_tail();
+
+#if defined(FEATURE_SERIAL) && !defined(OPTION_DISABLE_SERIAL_PORT_CHECKING_WHILE_SENDING_CW)
+        if (((ticks - (micros() - start)) > (10 * 1000)) && (sending_mode == AUTOMATIC_SENDING))
+        {
+            check_serial();
+            if (loop_element_lengths_breakout_flag == 0)
+            {
+                dump_current_character_flag = 1;
+            }
+        }
+#endif // FEATURE_SERIAL
+
+#if defined(FEATURE_INTERNET_LINK) /*&& !defined(OPTION_INTERNET_LINK_NO_UDP_SVC_DURING_KEY_DOWN)*/
+        // if ((millis() > 1000)  && ((millis()-start) > FEATURE_INTERNET_LINK_SVC_DURING_LOOP_TIME_MS)){
+        if ((ticks - (micros() - start)) > (FEATURE_INTERNET_LINK_SVC_DURING_LOOP_TIME_MS * 1000))
+        {
+            service_udp_send_buffer();
+            service_udp_receive();
+            service_internet_link_udp_receive_buffer();
+        }
+#endif // FEATURE_INTERNET_LINK
+
+#if defined(OPTION_WATCHDOG_TIMER) && !defined(ARDUINO_RASPBERRY_PI_PICO_W) && !defined(ARDUINO_RASPBERRY_PI_PICO)
+        wdt_reset();
+#endif // OPTION_WATCHDOG_TIMER
+
+#if defined(FEATURE_ROTARY_ENCODER)
+        check_rotary_encoder();
+#endif // FEATURE_ROTARY_ENCODER
+
+#if defined(FEATURE_USB_KEYBOARD) || defined(FEATURE_USB_MOUSE)
+        service_usb();
+#endif // FEATURE_USB_KEYBOARD || FEATURE_USB_MOUSE
+
+#if defined(FEATURE_PTT_INTERLOCK)
+        service_ptt_interlock();
+#endif // FEATURE_PTT_INTERLOCK
+
+#if defined(FEATURE_4x4_KEYPAD) || defined(FEATURE_3x4_KEYPAD)
+        service_keypad();
+#endif
+
+#if defined(FEATURE_DISPLAY)
+        if ((ticks - (micros() - start)) > (10 * 1000))
+        {
+            service_display();
+        }
+#endif
+
+        if ((configuration.keyer_mode != ULTIMATIC) && (configuration.keyer_mode != SINGLE_PADDLE))
+        {
+            if ((configuration.keyer_mode == IAMBIC_A) && (paddle_pin_read(paddle_left) == LOW) && (paddle_pin_read(paddle_right) == LOW))
+            {
+                iambic_flag = 1;
+            }
+
+#ifndef FEATURE_CMOS_SUPER_KEYER_IAMBIC_B_TIMING
+            if (being_sent == SENDING_DIT)
+            {
+                check_dah_paddle();
+            }
+            else
+            {
+                if (being_sent == SENDING_DAH)
+                {
+                    check_dit_paddle();
+                }
+                else
+                {
+                    check_dah_paddle();
+                    check_dit_paddle();
+                }
+            }
+#else  ////FEATURE_CMOS_SUPER_KEYER_IAMBIC_B_TIMING
+            // if (configuration.cmos_super_keyer_iambic_b_timing_on){
+            if ((configuration.cmos_super_keyer_iambic_b_timing_on) && (sending_mode == MANUAL_SENDING))
+            {
+                if ((float(float(micros() - start) / float(ticks)) * 100) >= configuration.cmos_super_keyer_iambic_b_timing_percent)
+                {
+                    // if ((float(float(millis()-starttime)/float(starttime-ticks))*100) >= configuration.cmos_super_keyer_iambic_b_timing_percent) {
+                    if (being_sent == SENDING_DIT)
+                    {
+                        check_dah_paddle();
+                    }
+                    else
+                    {
+                        if (being_sent == SENDING_DAH)
+                        {
+                            check_dit_paddle();
+                        }
+                    }
+                }
+                else
+                {
+                    if (((being_sent == SENDING_DIT) || (being_sent == SENDING_DAH)) && (paddle_pin_read(paddle_left) == LOW) && (paddle_pin_read(paddle_right) == LOW))
+                    {
+                        dah_buffer = 0;
+                        dit_buffer = 0;
+                    }
+                }
+            }
+            else
+            {
+                if (being_sent == SENDING_DIT)
+                {
+                    check_dah_paddle();
+                }
+                else
+                {
+                    if (being_sent == SENDING_DAH)
+                    {
+                        check_dit_paddle();
+                    }
+                    else
+                    {
+                        check_dah_paddle();
+                        check_dit_paddle();
+                    }
+                }
+            }
+#endif // FEATURE_CMOS_SUPER_KEYER_IAMBIC_B_TIMING
+        }
+        else
+        { //(configuration.keyer_mode != ULTIMATIC)
+#ifndef OPTION_NO_ULTIMATIC
+            if (being_sent == SENDING_DIT)
+            {
+                check_dah_paddle();
+            }
+            else
+            {
+                if (being_sent == SENDING_DAH)
+                {
+                    check_dit_paddle();
+                }
+                else
+                {
+                    check_dah_paddle();
+                    check_dit_paddle();
+                }
+            }
+#endif // OPTION_NO_ULTIMATIC
+        }
+
+#if defined(FEATURE_MEMORIES) && defined(FEATURE_BUTTONS)
+        check_the_memory_buttons();
+#endif
+
+// blow out prematurely if we're automatic sending and a paddle gets hit
+#ifdef FEATURE_BUTTONS
+        if (sending_mode == AUTOMATIC_SENDING && (paddle_pin_read(paddle_left) == LOW || paddle_pin_read(paddle_right) == LOW || analogbuttonread(0) || dit_buffer || dah_buffer))
+        {
+            if (keyer_machine_mode == KEYER_NORMAL)
+            {
+                sending_mode = AUTOMATIC_SENDING_INTERRUPTED;
+                automatic_sending_interruption_time = millis();
+                return;
+            }
+        }
+#else
+        if (sending_mode == AUTOMATIC_SENDING && (paddle_pin_read(paddle_left) == LOW || paddle_pin_read(paddle_right) == LOW || dit_buffer || dah_buffer))
+        {
+            if (keyer_machine_mode == KEYER_NORMAL)
+            {
+                sending_mode = AUTOMATIC_SENDING_INTERRUPTED;
+                automatic_sending_interruption_time = millis();
+
+#ifdef FEATURE_SO2R_BASE
+                so2r_set_rx();
+#endif
+
+                return;
+            }
+        }
+#endif
+
+#ifdef FEATURE_STRAIGHT_KEY
+        service_straight_key();
+#endif // FEATURE_STRAIGHT_KEY
+
+#if defined(FEATURE_WEB_SERVER)
+        if (speed_mode == SPEED_QRSS)
+        {
+            service_web_server();
+        }
+#endif // FEATURE_WEB_SERVER
+
+#ifdef FEATURE_SO2R_SWITCHES
+        so2r_switches();
+#endif
+
+    } // while ((millis() < endtime) && (millis() > 200))
+
+    if ((configuration.keyer_mode == IAMBIC_A) && (iambic_flag) && (paddle_pin_read(paddle_left) == HIGH) && (paddle_pin_read(paddle_right) == HIGH))
+    {
+        iambic_flag = 0;
+        dit_buffer = 0;
+        dah_buffer = 0;
+    }
+
+    if ((being_sent == SENDING_DIT) || (being_sent == SENDING_DAH))
+    {
+        if (configuration.dit_buffer_off)
+        {
+            dit_buffer = 0;
+        }
+        if (configuration.dah_buffer_off)
+        {
+            dah_buffer = 0;
+        }
+    }
+
+#if defined(DEBUG_LOOP_ELEMENT_LENGTHS)
+    debug_serial_port->println("loop_element_lengths: exit");
+#endif
+
+} // void loop_element_lengths
+
+//-------------------------------------------------------------------------------------------------------

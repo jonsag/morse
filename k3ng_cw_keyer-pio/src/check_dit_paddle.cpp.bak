@@ -1,0 +1,95 @@
+
+
+void check_dit_paddle()
+{
+
+    byte pin_value = 0;
+    byte dit_paddle = 0;
+#ifdef OPTION_DIT_PADDLE_NO_SEND_ON_MEM_RPT
+    static byte memory_rpt_interrupt_flag = 0;
+#endif
+
+    if (configuration.paddle_mode == PADDLE_NORMAL)
+    {
+        dit_paddle = paddle_left;
+    }
+    else
+    {
+        dit_paddle = paddle_right;
+    }
+
+    pin_value = paddle_pin_read(dit_paddle);
+
+#if defined(FEATURE_USB_MOUSE) || defined(FEATURE_USB_KEYBOARD)
+    if (usb_dit)
+    {
+        pin_value = 0;
+    }
+#endif
+
+#ifdef OPTION_DIT_PADDLE_NO_SEND_ON_MEM_RPT
+    if (pin_value && memory_rpt_interrupt_flag)
+    {
+        memory_rpt_interrupt_flag = 0;
+        sending_mode = MANUAL_SENDING;
+        loop_element_lengths(3, 0, configuration.wpm);
+        dit_buffer = 0;
+    }
+#endif
+
+#ifdef OPTION_DIT_PADDLE_NO_SEND_ON_MEM_RPT
+    if ((pin_value == 0) && (memory_rpt_interrupt_flag == 0))
+    {
+#else
+    if (pin_value == 0)
+    {
+#endif
+#ifdef FEATURE_DEAD_OP_WATCHDOG
+        if (dit_buffer == 0)
+        {
+            dit_counter++;
+            dah_counter = 0;
+        }
+#endif
+        dit_buffer = 1;
+
+#if defined(OPTION_WINKEY_SEND_BREAKIN_STATUS_BYTE) && defined(FEATURE_WINKEY_EMULATION)
+        if (!winkey_interrupted && winkey_host_open && !winkey_breakin_status_byte_inhibit)
+        {
+            send_winkey_breakin_byte_flag = 1;
+            // winkey_port_write(0xc2|winkey_sending|winkey_xoff); // 0xc2 - BREAKIN bit set high
+            // winkey_interrupted = 1;
+
+            // tone(sidetone_line,1000);
+            // delay(500);
+            // noTone(sidetone_line);
+
+            dit_buffer = 0;
+        }
+#endif // defined(OPTION_WINKEY_SEND_BREAKIN_STATUS_BYTE) && defined(FEATURE_WINKEY_EMULATION)
+
+#ifdef FEATURE_SLEEP
+        last_activity_time = millis();
+#endif // FEATURE_SLEEP
+#ifdef FEATURE_LCD_BACKLIGHT_AUTO_DIM
+        last_active_time = millis();
+#endif // FEATURE_LCD_BACKLIGHT_AUTO_DIM
+        manual_ptt_invoke = 0;
+#ifdef FEATURE_MEMORIES
+        if (repeat_memory < 255)
+        {
+            repeat_memory = 255;
+#ifdef OPTION_DIT_PADDLE_NO_SEND_ON_MEM_RPT
+            dit_buffer = 0;
+            while (!paddle_pin_read(dit_paddle))
+            {
+            };
+            memory_rpt_interrupt_flag = 1;
+#endif
+        }
+#endif
+        clear_send_buffer();
+    }
+}
+
+//-------------------------------------------------------------------------------------------------------

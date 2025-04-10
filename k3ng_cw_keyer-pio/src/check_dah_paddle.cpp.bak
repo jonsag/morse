@@ -1,0 +1,59 @@
+
+void check_dah_paddle()
+{
+
+    byte pin_value = 0;
+    byte dah_paddle;
+
+    if (configuration.paddle_mode == PADDLE_NORMAL)
+    {
+        dah_paddle = paddle_right;
+    }
+    else
+    {
+        dah_paddle = paddle_left;
+    }
+
+    pin_value = paddle_pin_read(dah_paddle);
+
+#if defined(FEATURE_USB_MOUSE) || defined(FEATURE_USB_KEYBOARD)
+    if (usb_dah)
+    {
+        pin_value = 0;
+    }
+#endif
+
+    if (pin_value == 0)
+    {
+#ifdef FEATURE_DEAD_OP_WATCHDOG
+        if (dah_buffer == 0)
+        {
+            dah_counter++;
+            dit_counter = 0;
+        }
+#endif
+        dah_buffer = 1;
+
+#if defined(OPTION_WINKEY_SEND_BREAKIN_STATUS_BYTE) && defined(FEATURE_WINKEY_EMULATION)
+        if (!winkey_interrupted && winkey_host_open && !winkey_breakin_status_byte_inhibit)
+        {
+            send_winkey_breakin_byte_flag = 1;
+            dah_buffer = 0;
+        }
+#endif // defined(OPTION_WINKEY_SEND_BREAKIN_STATUS_BYTE) && defined(FEATURE_WINKEY_EMULATION)
+
+#ifdef FEATURE_SLEEP
+        last_activity_time = millis();
+#endif // FEATURE_SLEEP
+#ifdef FEATURE_LCD_BACKLIGHT_AUTO_DIM
+        last_active_time = millis();
+#endif // FEATURE_LCD_BACKLIGHT_AUTO_DIM
+#ifdef FEATURE_MEMORIES
+        repeat_memory = 255;
+#endif
+        clear_send_buffer();
+        manual_ptt_invoke = 0;
+    }
+}
+
+//-------------------------------------------------------------------------------------------------------
