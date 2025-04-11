@@ -1,0 +1,478 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "d93537ee-5c24-4c3e-8ba0-9c6559a17368")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 246.38 100.33)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "028e3d1a-bccc-48f9-ab4d-1dc64a5e94ff")
+		(property "Sheetname" "Outputs"
+			(at 246.38 99.6184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Outputs.kicad_sch"
+			(at 246.38 104.7246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Open Interface III"
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 246.38 111.76)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "04e0591c-9342-4afe-bf6a-45062b44bacf")
+		(property "Sheetname" "TRX CAT"
+			(at 246.38 111.0484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TRX_CAT.kicad_sch"
+			(at 246.38 116.1546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Open Interface III"
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 246.38 66.04)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "12a318de-a82f-417b-8860-baf714680e38")
+		(property "Sheetname" "D-Sub 25"
+			(at 246.38 65.3284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "D-Sub_25.kicad_sch"
+			(at 246.38 70.4346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Open Interface III"
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 246.38 21.59)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "38dbc9f8-2c26-4fae-962d-1a1a74211f12")
+		(property "Sheetname" "USB Isolated"
+			(at 246.38 20.8784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "USB_Isolated.kicad_sch"
+			(at 246.38 25.9846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 246.38 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Open Interface III"
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 246.38 77.47)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "604b6e8f-bbfc-4153-991d-cc7d34f8db00")
+		(property "Sheetname" "Micro SD"
+			(at 246.38 76.7584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Micro_SD.kicad_sch"
+			(at 246.38 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Open Interface III"
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 246.38 54.61)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "671112d9-5af4-4042-bb4b-eae8a0524e41")
+		(property "Sheetname" "Misc"
+			(at 246.38 53.8984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Misc.kicad_sch"
+			(at 246.38 59.0046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Open Interface III"
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 246.38 43.18)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8beda446-4d77-441c-84b1-ea68ba3126a0")
+		(property "Sheetname" "CW FSK Interface"
+			(at 246.38 42.4684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CW_FSK_Interface.kicad_sch"
+			(at 246.38 47.5746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Open Interface III"
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 246.38 31.75)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "984810fb-07e9-4dc7-899a-8d7391d09c8c")
+		(property "Sheetname" "USB Hub"
+			(at 246.38 31.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "USB_Hub.kicad_sch"
+			(at 246.38 36.1446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Open Interface III"
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 246.38 134.62)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "af60e1b9-0da5-42a6-8b56-df77791cfdef")
+		(property "Sheetname" "Audio Switching"
+			(at 246.38 133.9084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Audio_Switching.kicad_sch"
+			(at 246.38 139.0146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Open Interface III"
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 246.38 146.05)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d932de5e-0586-4eef-9362-e258b5f13627")
+		(property "Sheetname" "ACC"
+			(at 246.38 145.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ACC.kicad_sch"
+			(at 246.38 150.4446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Open Interface III"
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 246.38 123.19)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e0b47b2c-2243-482e-b0f6-3fb40b19cccc")
+		(property "Sheetname" "USB Sound Card"
+			(at 246.38 122.4784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "USB Sound Card.kicad_sch"
+			(at 246.38 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Open Interface III"
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 246.38 88.9)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f51ea176-0284-463d-bcc7-8a64c07392ab")
+		(property "Sheetname" "DC-DC Power"
+			(at 246.38 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DC-DC_Power.kicad_sch"
+			(at 246.38 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Open Interface III"
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
