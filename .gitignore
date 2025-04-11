@@ -4,3 +4,7 @@ _autosave*.kicad_sch
 *.kicad_sch.lck
 fp-info-cache
 *.kicad_prl
+KiCad/nanoKeyer/nanoKeyer-backups/
+KiCad/nanoKeyer/nanoKeyer.dsn
+KiCad/nanoKeyer/nanoKeyer.rules
+KiCad/nanoKeyer/nanoKeyer.ses
