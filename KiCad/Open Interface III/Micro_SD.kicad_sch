@@ -4,6 +4,9 @@
 	(generator_version "8.0")
 	(uuid "0cac8c9a-f1d5-4b73-b190-7418cc2d9183")
 	(paper "A4")
+	(title_block
+		(rev "0.1")
+	)
 	(lib_symbols
 		(symbol "Connector:Micro_SD_Card_Det2"
 			(exclude_from_sim no)
@@ -1902,7 +1905,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19b0570b-1317-426f-99c7-b0d68d9ef302")
-		(property "Reference" "#PWR39"
+		(property "Reference" "#PWR54"
 			(at 154.94 64.77 0)
 			(effects
 				(font
@@ -1952,7 +1955,7 @@
 		(instances
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/604b6e8f-bbfc-4153-991d-cc7d34f8db00"
-					(reference "#PWR39")
+					(reference "#PWR54")
 					(unit 1)
 				)
 			)
@@ -1968,7 +1971,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "290c3a6c-3d0e-49e2-9703-82761e187a6a")
-		(property "Reference" "R42"
+		(property "Reference" "R52"
 			(at 71.12 59.6899 0)
 			(effects
 				(font
@@ -2022,7 +2025,7 @@
 		(instances
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/604b6e8f-bbfc-4153-991d-cc7d34f8db00"
-					(reference "R42")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -2038,7 +2041,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f2c7eeb-82b2-422a-8cc5-2d5306200f5a")
-		(property "Reference" "U11"
+		(property "Reference" "U13"
 			(at 130.81 62.23 0)
 			(effects
 				(font
@@ -2054,7 +2057,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-8"
+		(property "Footprint" ""
 			(at 134.62 99.822 0)
 			(effects
 				(font
@@ -2108,7 +2111,7 @@
 		(instances
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/604b6e8f-bbfc-4153-991d-cc7d34f8db00"
-					(reference "U11")
+					(reference "U13")
 					(unit 1)
 				)
 			)
@@ -2124,7 +2127,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f45abaf-e366-48a8-abba-a7f5db25160d")
-		(property "Reference" "U12"
+		(property "Reference" "U14"
 			(at 130.81 104.14 0)
 			(effects
 				(font
@@ -2140,7 +2143,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-8"
+		(property "Footprint" ""
 			(at 134.62 141.732 0)
 			(effects
 				(font
@@ -2194,7 +2197,7 @@
 		(instances
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/604b6e8f-bbfc-4153-991d-cc7d34f8db00"
-					(reference "U12")
+					(reference "U14")
 					(unit 1)
 				)
 			)
@@ -2210,7 +2213,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37bb354d-1209-4e2c-98f9-24e91f44f28e")
-		(property "Reference" "C22"
+		(property "Reference" "C35"
 			(at 158.75 119.3799 0)
 			(effects
 				(font
@@ -2264,7 +2267,7 @@
 		(instances
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/604b6e8f-bbfc-4153-991d-cc7d34f8db00"
-					(reference "C22")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -2280,7 +2283,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46af51e6-0c74-4fde-bb5e-7dcae6ead120")
-		(property "Reference" "#PWR40"
+		(property "Reference" "#PWR55"
 			(at 154.94 144.78 0)
 			(effects
 				(font
@@ -2330,7 +2333,7 @@
 		(instances
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/604b6e8f-bbfc-4153-991d-cc7d34f8db00"
-					(reference "#PWR40")
+					(reference "#PWR55")
 					(unit 1)
 				)
 			)
@@ -2346,7 +2349,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "afcf1428-d86c-418a-a431-14bfc5dc4800")
-		(property "Reference" "J5"
+		(property "Reference" "J6"
 			(at 201.295 66.04 0)
 			(effects
 				(font
@@ -2425,7 +2428,7 @@
 		(instances
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/604b6e8f-bbfc-4153-991d-cc7d34f8db00"
-					(reference "J5")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -2441,7 +2444,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b04f70c7-1b78-4341-88bd-e7b86b257b59")
-		(property "Reference" "C23"
+		(property "Reference" "C34"
 			(at 72.39 129.5399 0)
 			(effects
 				(font
@@ -2495,7 +2498,7 @@
 		(instances
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/604b6e8f-bbfc-4153-991d-cc7d34f8db00"
-					(reference "C23")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -2511,7 +2514,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dccfc6bc-36dc-475f-9d62-002550d9cb2f")
-		(property "Reference" "#PWR42"
+		(property "Reference" "#PWR52"
 			(at 68.58 55.88 0)
 			(effects
 				(font
@@ -2561,7 +2564,7 @@
 		(instances
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/604b6e8f-bbfc-4153-991d-cc7d34f8db00"
-					(reference "#PWR42")
+					(reference "#PWR52")
 					(unit 1)
 				)
 			)
@@ -2577,7 +2580,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eda6d894-1907-430a-be68-0e5990ffc920")
-		(property "Reference" "#PWR41"
+		(property "Reference" "#PWR53"
 			(at 80.01 149.86 0)
 			(effects
 				(font
@@ -2627,7 +2630,7 @@
 		(instances
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/604b6e8f-bbfc-4153-991d-cc7d34f8db00"
-					(reference "#PWR41")
+					(reference "#PWR53")
 					(unit 1)
 				)
 			)

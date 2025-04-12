@@ -4,6 +4,9 @@
 	(generator_version "8.0")
 	(uuid "6383f235-9fff-44cd-bad0-28a46eee4e49")
 	(paper "A4")
+	(title_block
+		(rev "0.1")
+	)
 	(lib_symbols
 		(symbol "Connector:USB_B"
 			(pin_names
@@ -3254,7 +3257,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00f8d11f-1c9c-4be6-861f-5b23ac041bf4")
-		(property "Reference" "R2"
+		(property "Reference" "R12"
 			(at 135.89 100.33 90)
 			(effects
 				(font
@@ -3270,7 +3273,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 135.89 108.458 90)
 			(effects
 				(font
@@ -3306,7 +3309,7 @@
 		(instances
 			(project ""
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/38dbc9f8-2c26-4fae-962d-1a1a74211f12"
-					(reference "R2")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -3322,7 +3325,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0eb53f79-330b-4364-8efc-56747125a4f8")
-		(property "Reference" "#PWR2"
+		(property "Reference" "#PWR14"
 			(at 172.72 142.24 0)
 			(effects
 				(font
@@ -3372,7 +3375,7 @@
 		(instances
 			(project ""
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/38dbc9f8-2c26-4fae-962d-1a1a74211f12"
-					(reference "#PWR2")
+					(reference "#PWR14")
 					(unit 1)
 				)
 			)
@@ -3388,7 +3391,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1adbcd6c-2d38-4b75-adcd-18a5bbd96350")
-		(property "Reference" "R3"
+		(property "Reference" "R13"
 			(at 135.89 110.49 90)
 			(effects
 				(font
@@ -3404,7 +3407,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 135.89 118.618 90)
 			(effects
 				(font
@@ -3440,7 +3443,7 @@
 		(instances
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/38dbc9f8-2c26-4fae-962d-1a1a74211f12"
-					(reference "R3")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -3472,7 +3475,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder"
 			(at 123.19 106.68 0)
 			(effects
 				(font
@@ -3524,7 +3527,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a0a1c95-a9eb-45a3-8b08-5fa5699bd3ae")
-		(property "Reference" "#PWR3"
+		(property "Reference" "#PWR15"
 			(at 195.58 74.93 0)
 			(effects
 				(font
@@ -3574,7 +3577,7 @@
 		(instances
 			(project ""
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/38dbc9f8-2c26-4fae-962d-1a1a74211f12"
-					(reference "#PWR3")
+					(reference "#PWR15")
 					(unit 1)
 				)
 			)
@@ -3590,7 +3593,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8312f4f6-3fc5-400f-80ae-5dcadcd7c3e6")
-		(property "Reference" "U2"
+		(property "Reference" "U4"
 			(at 172.3741 91.44 0)
 			(effects
 				(font
@@ -3686,7 +3689,7 @@
 		(instances
 			(project ""
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/38dbc9f8-2c26-4fae-962d-1a1a74211f12"
-					(reference "U2")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -3702,7 +3705,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9601c755-3371-4be6-84fe-7b25b4be5209")
-		(property "Reference" "C1"
+		(property "Reference" "C13"
 			(at 153.67 69.8499 0)
 			(effects
 				(font
@@ -3720,7 +3723,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 150.8252 74.93 0)
 			(effects
 				(font
@@ -3756,7 +3759,7 @@
 		(instances
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/38dbc9f8-2c26-4fae-962d-1a1a74211f12"
-					(reference "C1")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -3772,7 +3775,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99eb1518-2dae-4f16-ab9a-275a2860725a")
-		(property "Reference" "C2"
+		(property "Reference" "C14"
 			(at 153.67 87.6299 0)
 			(effects
 				(font
@@ -3790,7 +3793,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 150.8252 92.71 0)
 			(effects
 				(font
@@ -3826,7 +3829,7 @@
 		(instances
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/38dbc9f8-2c26-4fae-962d-1a1a74211f12"
-					(reference "C2")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -3842,7 +3845,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ce726be-b746-4aeb-ad3e-82f3c92ae298")
-		(property "Reference" "R1"
+		(property "Reference" "R11"
 			(at 111.76 62.2299 0)
 			(effects
 				(font
@@ -3860,7 +3863,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 107.442 63.5 90)
 			(effects
 				(font
@@ -3896,7 +3899,7 @@
 		(instances
 			(project ""
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/38dbc9f8-2c26-4fae-962d-1a1a74211f12"
-					(reference "R1")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -3930,7 +3933,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder"
 			(at 195.58 80.01 0)
 			(effects
 				(font
@@ -3982,7 +3985,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3e79436-633a-4170-97ce-f4511559040c")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 77.47 93.98 0)
 			(effects
 				(font
@@ -3998,7 +4001,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:USB_B_OST_USB-B1HSxx_Horizontal"
 			(at 81.28 107.95 0)
 			(effects
 				(font
@@ -4043,7 +4046,7 @@
 		(instances
 			(project ""
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/38dbc9f8-2c26-4fae-962d-1a1a74211f12"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -4059,7 +4062,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de2add69-f55f-4ed2-a6cb-0bfbb81a6e15")
-		(property "Reference" "#PWR1"
+		(property "Reference" "#PWR13"
 			(at 74.93 142.24 0)
 			(effects
 				(font
@@ -4109,7 +4112,7 @@
 		(instances
 			(project ""
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/38dbc9f8-2c26-4fae-962d-1a1a74211f12"
-					(reference "#PWR1")
+					(reference "#PWR13")
 					(unit 1)
 				)
 			)
@@ -4141,7 +4144,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder"
 			(at 123.19 116.84 0)
 			(effects
 				(font
@@ -4193,7 +4196,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb4f944d-ce13-4b2a-a1bf-7151aa982e65")
-		(property "Reference" "C4"
+		(property "Reference" "C16"
 			(at 199.39 120.6499 0)
 			(effects
 				(font
@@ -4211,7 +4214,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 196.5452 125.73 0)
 			(effects
 				(font
@@ -4247,7 +4250,7 @@
 		(instances
 			(project ""
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/38dbc9f8-2c26-4fae-962d-1a1a74211f12"
-					(reference "C4")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -4263,7 +4266,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef011e87-5612-417f-9613-a4d1d611b108")
-		(property "Reference" "C3"
+		(property "Reference" "C15"
 			(at 199.39 96.5199 0)
 			(effects
 				(font
@@ -4281,7 +4284,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 196.5452 101.6 0)
 			(effects
 				(font
@@ -4317,7 +4320,7 @@
 		(instances
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/38dbc9f8-2c26-4fae-962d-1a1a74211f12"
-					(reference "C3")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -4333,7 +4336,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fbb8bc08-6f68-4d26-a9d0-cbbf377bba7f")
-		(property "Reference" "U1"
+		(property "Reference" "U3"
 			(at 115.57 78.7399 0)
 			(effects
 				(font
@@ -4399,7 +4402,7 @@
 		(instances
 			(project ""
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/38dbc9f8-2c26-4fae-962d-1a1a74211f12"
-					(reference "U1")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -4433,7 +4436,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder"
 			(at 90.17 63.5 0)
 			(effects
 				(font

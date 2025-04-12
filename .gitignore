@@ -8,3 +8,5 @@ KiCad/nanoKeyer/nanoKeyer-backups/
 KiCad/nanoKeyer/nanoKeyer.dsn
 KiCad/nanoKeyer/nanoKeyer.rules
 KiCad/nanoKeyer/nanoKeyer.ses
+*.rules
+*.dsn
