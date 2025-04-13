@@ -1756,7 +1756,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 70.358 48.006 0)
 			(effects
 				(font
@@ -1961,7 +1961,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:HDMI_A_Kycon_KDMIX-SL1-NS-WS-B15_VerticalRightAngle"
 			(at 154.305 77.47 0)
 			(effects
 				(font

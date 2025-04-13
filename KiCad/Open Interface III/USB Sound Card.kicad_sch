@@ -909,7 +909,7 @@
 				)
 			)
 		)
-		(symbol "Device:Transformer_1P_1S_SO8"
+		(symbol "Device:Transformer_1P_1S"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -923,7 +923,7 @@
 					)
 				)
 			)
-			(property "Value" "Transformer_1P_1S_SO8"
+			(property "Value" "Transformer_1P_1S"
 				(at 0 -7.62 0)
 				(effects
 					(font
@@ -949,7 +949,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Transformer, single primary, single secondary, SO-8 package"
+			(property "Description" "Transformer, single primary, single secondary"
 				(at 0 0 0)
 				(effects
 					(font
@@ -967,7 +967,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Transformer_1P_1S_SO8_0_1"
+			(symbol "Transformer_1P_1S_0_1"
 				(arc
 					(start -2.54 -5.0546)
 					(mid -1.6599 -4.6901)
@@ -1185,10 +1185,10 @@
 					)
 				)
 			)
-			(symbol "Transformer_1P_1S_SO8_1_1"
+			(symbol "Transformer_1P_1S_1_1"
 				(pin passive line
-					(at -7.62 5.08 0)
-					(length 5.08)
+					(at -10.16 5.08 0)
+					(length 7.62)
 					(name "AA"
 						(effects
 							(font
@@ -1205,8 +1205,8 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -5.08 0)
-					(length 5.08)
+					(at -10.16 -5.08 0)
+					(length 7.62)
 					(name "AB"
 						(effects
 							(font
@@ -1214,7 +1214,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1223,8 +1223,8 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -5.08 180)
-					(length 5.08)
+					(at 10.16 -5.08 180)
+					(length 7.62)
 					(name "SA"
 						(effects
 							(font
@@ -1232,7 +1232,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1241,8 +1241,8 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 5.08 180)
-					(length 5.08)
+					(at 10.16 5.08 180)
+					(length 7.62)
 					(name "SB"
 						(effects
 							(font
@@ -1250,7 +1250,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2770,6 +2770,12 @@
 		(uuid "2aea509f-7d66-4ca6-864f-f8a7b0874b76")
 	)
 	(junction
+		(at 242.57 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2bfd2420-7c04-432a-8794-479fdf7637f3")
+	)
+	(junction
 		(at 35.56 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2896,12 +2902,6 @@
 		(uuid "aafe0b26-1354-4415-8058-0de8ee6f97c4")
 	)
 	(junction
-		(at 242.57 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b35f7b7a-fb33-47b9-b70b-f12892a06aba")
-	)
-	(junction
 		(at 93.98 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3025,6 +3025,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 22.86) (xy 207.01 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00f014b4-e16e-44c0-9f69-4660e741f429")
+	)
+	(wire
+		(pts
 			(xy 173.99 80.01) (xy 252.73 80.01)
 		)
 		(stroke
@@ -3102,6 +3112,16 @@
 			(type default)
 		)
 		(uuid "09cd5506-b749-4df3-9461-baa837c4b341")
+	)
+	(wire
+		(pts
+			(xy 133.35 35.56) (xy 138.43 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0adc7106-b309-4d8f-9a57-bf825b7b2e1d")
 	)
 	(wire
 		(pts
@@ -3222,16 +3242,6 @@
 			(type default)
 		)
 		(uuid "1b5031b8-04d1-4f4a-8656-210bd52f31fa")
-	)
-	(wire
-		(pts
-			(xy 224.79 22.86) (xy 242.57 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ca154fd-1954-40dc-9a12-d37c2d161312")
 	)
 	(wire
 		(pts
@@ -3395,13 +3405,13 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 33.02) (xy 209.55 33.02)
+			(xy 204.47 33.02) (xy 207.01 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "32dd5964-542f-4d6e-a97f-760cc3ad4a59")
+		(uuid "31a2723a-1889-4b40-9b97-10b424613e56")
 	)
 	(wire
 		(pts
@@ -3485,16 +3495,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 33.02) (xy 229.87 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a65116f-1ac9-4ee0-92fe-5a6dbfa60553")
-	)
-	(wire
-		(pts
 			(xy 81.28 22.86) (xy 76.2 22.86)
 		)
 		(stroke
@@ -3552,16 +3552,6 @@
 			(type default)
 		)
 		(uuid "3ff2d2c0-a347-4d3d-afbe-0dc3ff33e982")
-	)
-	(wire
-		(pts
-			(xy 130.81 35.56) (xy 138.43 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4234a66d-3d90-4035-a850-98ea603fa522")
 	)
 	(wire
 		(pts
@@ -3642,6 +3632,16 @@
 			(type default)
 		)
 		(uuid "4a6c1e41-fc45-4459-8d47-29766c486735")
+	)
+	(wire
+		(pts
+			(xy 133.35 25.4) (xy 144.78 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ac19c1f-bc1e-48de-9a18-86cd059e9782")
 	)
 	(wire
 		(pts
@@ -3735,6 +3735,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 22.86) (xy 242.57 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "553aac6b-a411-4026-841a-47ed76731c9d")
+	)
+	(wire
+		(pts
 			(xy 49.53 53.34) (xy 49.53 49.53)
 		)
 		(stroke
@@ -3792,6 +3802,16 @@
 			(type default)
 		)
 		(uuid "61ee42ba-2203-4eea-97db-b1191b109d6b")
+	)
+	(wire
+		(pts
+			(xy 102.87 25.4) (xy 113.03 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "623427fc-d707-432f-93f4-af0562c351b6")
 	)
 	(wire
 		(pts
@@ -3925,16 +3945,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 25.4) (xy 115.57 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ee1b41a-5125-48d8-8fb3-7249c9ed7070")
-	)
-	(wire
-		(pts
 			(xy 252.73 46.99) (xy 252.73 41.91)
 		)
 		(stroke
@@ -3962,6 +3972,16 @@
 			(type default)
 		)
 		(uuid "75800368-d465-42b8-816b-59d0d4e6c329")
+	)
+	(wire
+		(pts
+			(xy 102.87 35.56) (xy 113.03 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75908563-f643-4435-acd0-386b31bd18af")
 	)
 	(wire
 		(pts
@@ -4085,16 +4105,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 35.56) (xy 115.57 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87601aa1-c83a-49f3-86cf-acea3ebf0f41")
-	)
-	(wire
-		(pts
 			(xy 173.99 22.86) (xy 173.99 27.94)
 		)
 		(stroke
@@ -4202,16 +4212,6 @@
 			(type default)
 		)
 		(uuid "8fefab48-0006-4d4d-bc58-4571b9df7b8f")
-	)
-	(wire
-		(pts
-			(xy 199.39 22.86) (xy 209.55 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91c9c40f-140f-4683-85a5-0f3cfa8c7ca1")
 	)
 	(wire
 		(pts
@@ -4512,16 +4512,6 @@
 			(type default)
 		)
 		(uuid "b7b995c5-59e7-403d-b5d4-59298e1dd977")
-	)
-	(wire
-		(pts
-			(xy 144.78 25.4) (xy 130.81 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b82f87d0-56fa-4ce0-a45b-5077ada362da")
 	)
 	(wire
 		(pts
@@ -5045,6 +5035,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 33.02) (xy 229.87 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdbdc2c5-f5d8-4ed2-9f32-ded274bf4470")
+	)
+	(wire
+		(pts
 			(xy 248.92 109.22) (xy 254 109.22)
 		)
 		(stroke
@@ -5358,7 +5358,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder"
 			(at 275.59 50.8 0)
 			(effects
 				(font
@@ -5428,7 +5428,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 66.548 132.08 90)
 			(effects
 				(font
@@ -5498,7 +5498,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm"
 			(at 157.48 141.224 0)
 			(effects
 				(font
@@ -5645,7 +5645,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 147.32 178.308 90)
 			(effects
 				(font
@@ -5713,7 +5713,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 62.23 114.808 90)
 			(effects
 				(font
@@ -5781,7 +5781,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
 			(at 88.9 23.8252 0)
 			(effects
 				(font
@@ -5851,7 +5851,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 36.83 93.98 0)
 			(effects
 				(font
@@ -5912,80 +5912,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Transformer_1P_1S_SO8")
-		(at 217.17 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1b2dce38-8808-4384-8299-65fed9aa89aa")
-		(property "Reference" "T2"
-			(at 217.1827 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Transformer_1P_1S_SO8"
-			(at 217.1827 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 217.17 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 217.17 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Transformer, single primary, single secondary, SO-8 package"
-			(at 217.17 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "fd1073a0-86ef-48b4-a035-e701726544d0")
-		)
-		(pin "5"
-			(uuid "ca6163a6-16c9-4d11-ba4c-f8df23d797c5")
-		)
-		(pin "1"
-			(uuid "8fb80197-a691-4ef8-be4a-27dee125164b")
-		)
-		(pin "4"
-			(uuid "2806ad69-4b97-42fb-96aa-0dfc6763337b")
-		)
-		(instances
-			(project ""
-				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/e0b47b2c-2243-482e-b0f6-3fb40b19cccc"
-					(reference "T2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 102.87 30.48 0)
 		(mirror y)
@@ -6014,7 +5940,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:3-pin JST Potentiometer"
 			(at 102.87 30.48 0)
 			(effects
 				(font
@@ -6085,7 +6011,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 245.11 110.998 90)
 			(effects
 				(font
@@ -6153,7 +6079,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 199.39 39.6748 0)
 			(effects
 				(font
@@ -6289,7 +6215,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 143.8148 36.83 0)
 			(effects
 				(font
@@ -6357,7 +6283,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
 			(at 27.94 23.8252 0)
 			(effects
 				(font
@@ -6427,7 +6353,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 254.9652 134.62 0)
 			(effects
 				(font
@@ -6497,7 +6423,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 237.1852 134.62 0)
 			(effects
 				(font
@@ -6565,7 +6491,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 199.39 21.8948 0)
 			(effects
 				(font
@@ -6635,7 +6561,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
 			(at 266.3952 46.99 0)
 			(effects
 				(font
@@ -6705,7 +6631,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 73.152 102.87 90)
 			(effects
 				(font
@@ -6775,7 +6701,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 174.9552 35.56 0)
 			(effects
 				(font
@@ -6845,7 +6771,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 22.86 81.28 0)
 			(effects
 				(font
@@ -6933,7 +6859,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 51.308 57.15 90)
 			(effects
 				(font
@@ -7003,7 +6929,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
 			(at 178.7652 135.89 0)
 			(effects
 				(font
@@ -7074,7 +7000,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 38.1 47.625 0)
 			(effects
 				(font
@@ -7149,7 +7075,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:2-pin JST Switch"
 			(at 138.43 180.34 0)
 			(effects
 				(font
@@ -7217,7 +7143,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 85.09 47.498 90)
 			(effects
 				(font
@@ -7287,7 +7213,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
 			(at 201.6252 135.89 0)
 			(effects
 				(font
@@ -7357,7 +7283,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
 			(at 65.0748 53.34 0)
 			(effects
 				(font
@@ -7394,6 +7320,80 @@
 			(project "Open Interface III"
 				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/e0b47b2c-2243-482e-b0f6-3fb40b19cccc"
 					(reference "C64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Transformer_1P_1S")
+		(at 123.19 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b3c3799-e937-4f5b-bdf0-752460c0dcc6")
+		(property "Reference" "T1"
+			(at 123.2027 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Transformer_1P_1S"
+			(at 123.2027 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyFootprints:Audio Transformer Bourns SM-LP-5001"
+			(at 123.19 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Transformer, single primary, single secondary"
+			(at 123.19 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c2f7356f-795e-42cf-b430-50f2d24617b7")
+		)
+		(pin "3"
+			(uuid "74472e0a-e35d-45c8-9f28-f47b6fe5b3b7")
+		)
+		(pin "4"
+			(uuid "77ecd66d-16bc-437e-ad5b-9fcd08b7af2c")
+		)
+		(pin "1"
+			(uuid "f7b4129a-1b54-4ac3-b970-0dbb6ba2bad2")
+		)
+		(instances
+			(project ""
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/e0b47b2c-2243-482e-b0f6-3fb40b19cccc"
+					(reference "T1")
 					(unit 1)
 				)
 			)
@@ -7493,7 +7493,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
 			(at 225.7552 135.89 0)
 			(effects
 				(font
@@ -7563,7 +7563,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 76.708 132.08 90)
 			(effects
 				(font
@@ -7633,7 +7633,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
 			(at 190.1952 135.89 0)
 			(effects
 				(font
@@ -7702,7 +7702,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:2-pin JST Switch"
 			(at 138.43 167.64 0)
 			(effects
 				(font
@@ -7772,7 +7772,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 36.83 81.28 0)
 			(effects
 				(font
@@ -7860,7 +7860,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 36.5252 135.89 0)
 			(effects
 				(font
@@ -7930,7 +7930,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
 			(at 276.5552 134.62 0)
 			(effects
 				(font
@@ -8000,7 +8000,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
 			(at 94.9452 135.89 0)
 			(effects
 				(font
@@ -8043,80 +8043,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Transformer_1P_1S_SO8")
-		(at 123.19 30.48 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9d705872-47d4-41ae-a802-06349bb25d20")
-		(property "Reference" "T1"
-			(at 123.1773 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Transformer_1P_1S_SO8"
-			(at 123.1773 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 123.19 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Transformer, single primary, single secondary, SO-8 package"
-			(at 123.19 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "ef137190-b17a-4064-a6e0-d68b217631dc")
-		)
-		(pin "5"
-			(uuid "ae5e50c3-8f3c-4065-a54a-0259ed077756")
-		)
-		(pin "1"
-			(uuid "bc813274-18e2-40c2-9961-ad5ca01da2e2")
-		)
-		(pin "4"
-			(uuid "4440fef2-0f19-4f84-801e-570d8d644879")
-		)
-		(instances
-			(project "Open Interface III"
-				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/e0b47b2c-2243-482e-b0f6-3fb40b19cccc"
-					(reference "T1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "My_Parts:Switch")
 		(at 138.43 189.23 0)
 		(mirror y)
@@ -8143,7 +8069,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:2-pin JST Switch"
 			(at 138.43 193.04 0)
 			(effects
 				(font
@@ -8186,6 +8112,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Transformer_1P_1S")
+		(at 217.17 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b48bb23a-6053-4bc8-b018-7686563918a0")
+		(property "Reference" "T2"
+			(at 217.1827 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Transformer_1P_1S"
+			(at 217.1827 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyFootprints:Audio Transformer Bourns SM-LP-5001"
+			(at 217.17 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 217.17 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Transformer, single primary, single secondary"
+			(at 217.17 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "f2947b53-e3fd-499f-95f7-ac270b3216b2")
+		)
+		(pin "1"
+			(uuid "5e3ee1b4-3c03-417d-9ee0-6dac0e72d730")
+		)
+		(pin "2"
+			(uuid "d6368634-30fb-4e05-b234-effd630f49b8")
+		)
+		(pin "4"
+			(uuid "97889094-bb59-4250-9ece-ac62e3d86f98")
+		)
+		(instances
+			(project ""
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/e0b47b2c-2243-482e-b0f6-3fb40b19cccc"
+					(reference "T2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 242.57 31.75 0)
 		(unit 1)
@@ -8213,7 +8213,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 240.792 31.75 90)
 			(effects
 				(font
@@ -8283,7 +8283,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 22.86 93.98 0)
 			(effects
 				(font
@@ -8435,7 +8435,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 49.53 34.798 90)
 			(effects
 				(font
@@ -8505,7 +8505,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 67.0052 33.02 0)
 			(effects
 				(font
@@ -8573,7 +8573,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
 			(at 76.2 73.3552 0)
 			(effects
 				(font
@@ -8699,7 +8699,7 @@
 				)
 			)
 		)
-		(property "Value" "Crystal"
+		(property "Value" "12 MHz"
 			(at 245.11 115.57 0)
 			(effects
 				(font
@@ -8707,7 +8707,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_HC49-SD"
 			(at 245.11 120.65 0)
 			(effects
 				(font
@@ -8843,7 +8843,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
 			(at 253.6952 46.99 0)
 			(effects
 				(font
@@ -8913,7 +8913,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
 			(at 213.0552 135.89 0)
 			(effects
 				(font
@@ -8981,7 +8981,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 49.53 24.638 90)
 			(effects
 				(font
@@ -9050,7 +9050,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 147.32 191.008 90)
 			(effects
 				(font
@@ -9120,7 +9120,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 54.3052 135.89 0)
 			(effects
 				(font
@@ -9188,7 +9188,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 182.88 24.638 90)
 			(effects
 				(font
@@ -9248,7 +9248,7 @@
 				)
 			)
 		)
-		(property "Value" "10"
+		(property "Value" "10u"
 			(at 60.579 77.47 90)
 			(effects
 				(font
@@ -9256,7 +9256,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
 			(at 55.88 83.5152 0)
 			(effects
 				(font
@@ -9324,7 +9324,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 256.54 24.638 90)
 			(effects
 				(font
@@ -9392,7 +9392,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 44.45 124.968 90)
 			(effects
 				(font
@@ -9462,7 +9462,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 131.1148 52.07 0)
 			(effects
 				(font
@@ -9531,7 +9531,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 147.32 165.608 90)
 			(effects
 				(font

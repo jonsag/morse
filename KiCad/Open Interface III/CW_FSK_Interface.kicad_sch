@@ -4016,7 +4016,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 180.34 90.678 90)
 			(effects
 				(font
@@ -4152,7 +4152,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
 			(at 20.0152 124.46 0)
 			(effects
 				(font
@@ -4222,7 +4222,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 44.1452 124.46 0)
 			(effects
 				(font
@@ -4292,7 +4292,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
 			(at 219.71 96.52 0)
 			(effects
 				(font
@@ -4372,7 +4372,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 251.46 130.048 90)
 			(effects
 				(font
@@ -4507,7 +4507,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:Jumper_1x03_P2.54mm_large"
 			(at 243.84 139.7 0)
 			(effects
 				(font
@@ -4646,7 +4646,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 194.31 57.785 0)
 			(effects
 				(font
@@ -4722,7 +4722,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 207.772 45.72 90)
 			(effects
 				(font
@@ -4792,7 +4792,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:2-pin JST LED"
 			(at 248.92 60.96 0)
 			(effects
 				(font
@@ -4862,7 +4862,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 75.692 82.55 90)
 			(effects
 				(font
@@ -4932,7 +4932,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 247.142 45.72 90)
 			(effects
 				(font
@@ -5002,7 +5002,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 54.102 82.55 90)
 			(effects
 				(font
@@ -5072,7 +5072,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 54.102 120.65 90)
 			(effects
 				(font
@@ -5142,7 +5142,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 273.05 130.175 0)
 			(effects
 				(font
@@ -5218,7 +5218,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 87.3252 124.46 0)
 			(effects
 				(font
@@ -5354,7 +5354,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 215.392 140.97 90)
 			(effects
 				(font
@@ -5424,7 +5424,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 29.972 120.65 90)
 			(effects
 				(font
@@ -5494,7 +5494,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 234.442 45.72 90)
 			(effects
 				(font
@@ -5694,7 +5694,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 180.34 100.838 90)
 			(effects
 				(font
@@ -5764,7 +5764,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 268.732 111.76 90)
 			(effects
 				(font
@@ -5834,7 +5834,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 29.972 82.55 90)
 			(effects
 				(font
@@ -5971,7 +5971,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
 			(at 199.39 91.44 0)
 			(effects
 				(font
@@ -6053,7 +6053,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 195.072 140.97 90)
 			(effects
 				(font
@@ -6123,7 +6123,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:2-pin JST LED"
 			(at 236.22 60.96 0)
 			(effects
 				(font
@@ -6193,7 +6193,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder"
 			(at 125.73 40.64 0)
 			(effects
 				(font
@@ -6263,7 +6263,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm"
 			(at 156.21 124.46 0)
 			(effects
 				(font
@@ -6405,7 +6405,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 68.2752 124.46 0)
 			(effects
 				(font

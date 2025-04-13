@@ -8,7 +8,7 @@
 		(rev "0.1")
 	)
 	(lib_symbols
-		(symbol "Connector_Audio:AudioJack2_Dual_Ground_Switch"
+		(symbol "Connector_Audio:AudioJack2_Ground_Switch"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -20,7 +20,7 @@
 					)
 				)
 			)
-			(property "Value" "AudioJack2_Dual_Ground_Switch"
+			(property "Value" "AudioJack2_Ground_Switch"
 				(at 0 8.89 0)
 				(effects
 					(font
@@ -29,7 +29,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at -1.27 5.08 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -38,7 +38,7 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at -1.27 5.08 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -46,7 +46,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Audio Jack, Dual, 2 Poles (Mono / TS), Grounded Sleeve, Switched Pole (Normalling)"
+			(property "Description" "Audio Jack, 2 Poles (Mono / TS), Grounded Sleeve, Switched Pole (Normalling)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -55,7 +55,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "audio jack dual receptacle mono headphones phone TS connector"
+			(property "ki_keywords" "audio jack receptacle mono headphones phone TS connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -73,10 +73,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "AudioJack2_Dual_Ground_Switch_0_1"
+			(symbol "AudioJack2_Ground_Switch_0_1"
 				(rectangle
-					(start -5.08 0)
-					(end -3.81 -2.54)
+					(start -2.54 -2.54)
+					(end -3.81 0)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -85,129 +85,9 @@
 						(type outline)
 					)
 				)
-				(polyline
-					(pts
-						(xy -0.635 4.826) (xy -0.381 4.318)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 -0.254) (xy 0.762 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 5.08) (xy 1.27 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.635 -0.635) (xy 0 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.508 -2.54) (xy 0.508 -0.254) (xy 0.254 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy -0.635 2.54) (xy -0.635 4.826) (xy -0.889 4.318)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 5.08) (xy -1.905 5.08) (xy -1.905 0) (xy -2.54 -0.635) (xy -3.175 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(rectangle
-					(start 1.27 6.35)
-					(end -3.81 -5.08)
+					(start 2.54 6.35)
+					(end -2.54 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -217,7 +97,79 @@
 					)
 				)
 			)
-			(symbol "AudioJack2_Dual_Ground_Switch_1_1"
+			(symbol "AudioJack2_Ground_Switch_1_1"
+				(polyline
+					(pts
+						(xy 0.635 4.826) (xy 0.889 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 -0.254) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0.635 -0.635) (xy 1.27 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 1.778 -2.54) (xy 1.778 -0.254) (xy 1.524 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 0.635 2.54) (xy 0.635 4.826) (xy 0.381 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 5.08) (xy -0.635 5.08) (xy -0.635 0) (xy -1.27 -0.635) (xy -1.905 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
 					(at 0 -7.62 90)
 					(length 2.54)
@@ -246,7 +198,7 @@
 							)
 						)
 					)
-					(number "S1"
+					(number "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -264,7 +216,7 @@
 							)
 						)
 					)
-					(number "SN1"
+					(number "SN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -282,7 +234,7 @@
 							)
 						)
 					)
-					(number "T1"
+					(number "T"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -300,81 +252,7 @@
 							)
 						)
 					)
-					(number "TN1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "AudioJack2_Dual_Ground_Switch_2_1"
-				(pin passive line
-					(at 5.08 5.08 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "SN2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "T2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "TN2"
+					(number "TN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4647,7 +4525,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:3-pin JST Potentiometer"
 			(at 35.56 154.94 0)
 			(effects
 				(font
@@ -5050,7 +4928,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 225.552 140.97 90)
 			(effects
 				(font
@@ -5118,7 +4996,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 243.84 50.038 90)
 			(effects
 				(font
@@ -5254,7 +5132,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 193.802 118.11 90)
 			(effects
 				(font
@@ -5322,7 +5200,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 52.07 175.26 0)
 			(effects
 				(font
@@ -5390,7 +5268,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 39.37 46.228 90)
 			(effects
 				(font
@@ -5460,7 +5338,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 196.5452 144.78 0)
 			(effects
 				(font
@@ -5596,7 +5474,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:2 x 6-pin JST LCD HD44780 Stacked"
 			(at 66.04 87.63 0)
 			(effects
 				(font
@@ -5708,7 +5586,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 217.932 39.37 90)
 			(effects
 				(font
@@ -5776,7 +5654,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:2-pin JST Switch"
 			(at 236.22 153.67 0)
 			(effects
 				(font
@@ -5819,95 +5697,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack2_Dual_Ground_Switch")
-		(at 149.86 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f8e3384-b1c1-40af-ad50-7b289438a10d")
-		(property "Reference" "J3"
-			(at 148.5265 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Paddle In"
-			(at 148.5265 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 148.59 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Audio Jack, Dual, 2 Poles (Mono / TS), Grounded Sleeve, Switched Pole (Normalling)"
-			(at 149.86 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "TN1"
-			(uuid "8c539507-625b-4e4b-b577-7844999132df")
-		)
-		(pin "SN1"
-			(uuid "54a7e225-1343-435e-b116-a7820302c385")
-		)
-		(pin "T2"
-			(uuid "01893a13-d07f-486a-b6a4-b9bd8fa5c86b")
-		)
-		(pin "SN2"
-			(uuid "33b031ac-d548-407a-a7bd-e78180545ae0")
-		)
-		(pin "TN2"
-			(uuid "df16c962-14f7-4907-a5b1-c85f868dfc9e")
-		)
-		(pin "S2"
-			(uuid "7dc1e2ec-f789-483d-a874-892def5b11ab")
-		)
-		(pin "T1"
-			(uuid "8f799090-706e-40d4-a1ba-86917952df19")
-		)
-		(pin "G"
-			(uuid "5468765e-69fb-433f-83c2-c5ddc7886056")
-		)
-		(pin "S1"
-			(uuid "1977d9fe-2341-4717-b0ff-2b50242e46ca")
-		)
-		(instances
-			(project "Open Interface III"
-				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/671112d9-5af4-4042-bb4b-eae8a0524e41"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 90.17 137.16 90)
 		(mirror x)
@@ -5933,7 +5722,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:3-pin JST Potentiometer"
 			(at 90.17 137.16 0)
 			(effects
 				(font
@@ -6006,7 +5795,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 23.622 53.34 90)
 			(effects
 				(font
@@ -6076,7 +5865,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder"
 			(at 186.69 118.11 0)
 			(effects
 				(font
@@ -6146,7 +5935,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 174.9552 144.78 0)
 			(effects
 				(font
@@ -6216,7 +6005,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 202.8952 66.04 0)
 			(effects
 				(font
@@ -6352,7 +6141,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 54.3052 57.15 0)
 			(effects
 				(font
@@ -6422,7 +6211,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:3-pin JST Rotary Encoder"
 			(at 223.266 67.31 0)
 			(effects
 				(font
@@ -6559,7 +6348,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 242.57 100.838 90)
 			(effects
 				(font
@@ -6627,7 +6416,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 210.82 50.038 90)
 			(effects
 				(font
@@ -6697,7 +6486,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 233.172 39.37 90)
 			(effects
 				(font
@@ -6767,7 +6556,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 229.108 105.41 90)
 			(effects
 				(font
@@ -6903,7 +6692,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:2-pin JST Switch"
 			(at 259.08 105.41 0)
 			(effects
 				(font
@@ -7171,7 +6960,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 225.552 123.19 90)
 			(effects
 				(font
@@ -7373,7 +7162,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 23.622 35.56 90)
 			(effects
 				(font
@@ -7441,7 +7230,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:USR-ES1 W5500"
 			(at 151.13 58.42 0)
 			(effects
 				(font
@@ -7514,6 +7303,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Audio:AudioJack2_Ground_Switch")
+		(at 149.86 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d72d222a-6ca7-44f1-b496-604f63735877")
+		(property "Reference" "J3"
+			(at 149.225 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Paddle In"
+			(at 149.225 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyFootprints:3,5mm Jack Panel Socket 3-pole Switch large"
+			(at 149.86 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Grounded Sleeve, Switched Pole (Normalling)"
+			(at 149.86 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "TN"
+			(uuid "cd375ca2-b0b2-4448-a0d2-5e871d8e9c68")
+		)
+		(pin "G"
+			(uuid "0fab9021-49a8-4e4e-ad8b-2c74f17668bc")
+		)
+		(pin "S"
+			(uuid "adb07c71-047d-4e07-b125-a494fd9724ac")
+		)
+		(pin "SN"
+			(uuid "330b9567-3d40-4602-982b-c767549ddcd2")
+		)
+		(pin "T"
+			(uuid "892df5d6-def2-4e01-b66d-46b5b449e2ac")
+		)
+		(instances
+			(project ""
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/671112d9-5af4-4042-bb4b-eae8a0524e41"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 161.29 62.23 0)
 		(unit 1)
@@ -7541,7 +7407,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 162.2552 66.04 0)
 			(effects
 				(font
@@ -7677,7 +7543,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder"
 			(at 165.1 123.19 0)
 			(effects
 				(font
@@ -7745,7 +7611,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:2-pin JST Switch"
 			(at 236.22 135.89 0)
 			(effects
 				(font
@@ -7815,7 +7681,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 172.212 123.19 90)
 			(effects
 				(font
@@ -7883,7 +7749,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:2-pin JST Switch"
 			(at 236.22 118.11 0)
 			(effects
 				(font
@@ -8019,7 +7885,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 253.6952 66.04 0)
 			(effects
 				(font

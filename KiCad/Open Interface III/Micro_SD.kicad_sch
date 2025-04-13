@@ -1989,7 +1989,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 70.358 60.96 90)
 			(effects
 				(font
@@ -2057,7 +2057,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W_Handsoldering"
 			(at 134.62 99.822 0)
 			(effects
 				(font
@@ -2143,7 +2143,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23W_Handsoldering"
 			(at 134.62 141.732 0)
 			(effects
 				(font
@@ -2231,7 +2231,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 155.9052 124.46 0)
 			(effects
 				(font
@@ -2365,7 +2365,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5"
 			(at 252.73 69.85 0)
 			(effects
 				(font
@@ -2462,7 +2462,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 69.5452 134.62 0)
 			(effects
 				(font

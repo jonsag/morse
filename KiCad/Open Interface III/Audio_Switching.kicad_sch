@@ -8,7 +8,7 @@
 		(rev "0.1")
 	)
 	(lib_symbols
-		(symbol "Connector_Audio:AudioJack2_Dual_Ground_Switch"
+		(symbol "Connector_Audio:AudioJack2_Ground_Switch"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -20,7 +20,7 @@
 					)
 				)
 			)
-			(property "Value" "AudioJack2_Dual_Ground_Switch"
+			(property "Value" "AudioJack2_Ground_Switch"
 				(at 0 8.89 0)
 				(effects
 					(font
@@ -29,7 +29,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at -1.27 5.08 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -38,7 +38,7 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at -1.27 5.08 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -46,7 +46,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Audio Jack, Dual, 2 Poles (Mono / TS), Grounded Sleeve, Switched Pole (Normalling)"
+			(property "Description" "Audio Jack, 2 Poles (Mono / TS), Grounded Sleeve, Switched Pole (Normalling)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -55,7 +55,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "audio jack dual receptacle mono headphones phone TS connector"
+			(property "ki_keywords" "audio jack receptacle mono headphones phone TS connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -73,10 +73,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "AudioJack2_Dual_Ground_Switch_0_1"
+			(symbol "AudioJack2_Ground_Switch_0_1"
 				(rectangle
-					(start -5.08 0)
-					(end -3.81 -2.54)
+					(start -2.54 -2.54)
+					(end -3.81 0)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -85,129 +85,9 @@
 						(type outline)
 					)
 				)
-				(polyline
-					(pts
-						(xy -0.635 4.826) (xy -0.381 4.318)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 -0.254) (xy 0.762 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 5.08) (xy 1.27 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.635 -0.635) (xy 0 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.508 -2.54) (xy 0.508 -0.254) (xy 0.254 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy -0.635 2.54) (xy -0.635 4.826) (xy -0.889 4.318)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 5.08) (xy -1.905 5.08) (xy -1.905 0) (xy -2.54 -0.635) (xy -3.175 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(rectangle
-					(start 1.27 6.35)
-					(end -3.81 -5.08)
+					(start 2.54 6.35)
+					(end -2.54 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -217,7 +97,79 @@
 					)
 				)
 			)
-			(symbol "AudioJack2_Dual_Ground_Switch_1_1"
+			(symbol "AudioJack2_Ground_Switch_1_1"
+				(polyline
+					(pts
+						(xy 0.635 4.826) (xy 0.889 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 -0.254) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0.635 -0.635) (xy 1.27 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 1.778 -2.54) (xy 1.778 -0.254) (xy 1.524 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 0.635 2.54) (xy 0.635 4.826) (xy 0.381 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 5.08) (xy -0.635 5.08) (xy -0.635 0) (xy -1.27 -0.635) (xy -1.905 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
 					(at 0 -7.62 90)
 					(length 2.54)
@@ -246,7 +198,7 @@
 							)
 						)
 					)
-					(number "S1"
+					(number "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -264,7 +216,7 @@
 							)
 						)
 					)
-					(number "SN1"
+					(number "SN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -282,7 +234,7 @@
 							)
 						)
 					)
-					(number "T1"
+					(number "T"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -300,81 +252,7 @@
 							)
 						)
 					)
-					(number "TN1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "AudioJack2_Dual_Ground_Switch_2_1"
-				(pin passive line
-					(at 5.08 5.08 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "SN2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "T2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "TN2"
+					(number "TN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2789,6 +2667,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 99.06) (xy 252.73 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f1e7ac5-fe8a-48ad-ae03-8f4eabc88756")
+	)
+	(wire
+		(pts
 			(xy 73.66 119.38) (xy 73.66 154.94)
 		)
 		(stroke
@@ -2916,6 +2804,16 @@
 			(type default)
 		)
 		(uuid "494960b2-63da-4d65-8161-983eadeffd9f")
+	)
+	(wire
+		(pts
+			(xy 252.73 99.06) (xy 252.73 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49e4e012-3ee5-43b3-8b0c-3781b0c11027")
 	)
 	(wire
 		(pts
@@ -3587,6 +3485,28 @@
 			)
 		)
 	)
+	(global_label "Tx Audio GND"
+		(shape input)
+		(at 257.81 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "81f6761f-b743-41aa-badf-6ef25a80838d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 273.737 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "PA PTT Out"
 		(shape input)
 		(at 106.68 132.08 0)
@@ -3720,98 +3640,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack2_Dual_Ground_Switch")
-		(at 252.73 86.36 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "00fb5d40-892e-4fa0-b2e5-1cecacfa31d7")
-		(property "Reference" "J9"
-			(at 259.08 84.4549 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Mic In"
-			(at 259.08 86.9949 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 254 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 254 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Audio Jack, Dual, 2 Poles (Mono / TS), Grounded Sleeve, Switched Pole (Normalling)"
-			(at 252.73 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "S2"
-			(uuid "ebb5181c-bc25-4e51-95ea-28c4a84f52e5")
-		)
-		(pin "T2"
-			(uuid "a7f80b2a-7bf1-4235-9f1b-33c25ff22b32")
-		)
-		(pin "SN1"
-			(uuid "91fa6922-eab2-42c3-baa8-91e4f4f57c91")
-		)
-		(pin "T1"
-			(uuid "7745a8b1-6c11-4b79-aa14-34cd6640a673")
-		)
-		(pin "S1"
-			(uuid "b9719bcc-3d0d-43ab-ac06-292b6d89bb5a")
-		)
-		(pin "SN2"
-			(uuid "5fb85a72-d1ab-4d62-b66e-37569b22f12a")
-		)
-		(pin "G"
-			(uuid "aa6a5df2-0e4c-4ee1-b922-20e2bf8825b5")
-		)
-		(pin "TN1"
-			(uuid "69a3625f-5845-49e1-9a4d-9ad3dc55585b")
-		)
-		(pin "TN2"
-			(uuid "e1733e68-f66f-487b-9904-25ad691ec476")
-		)
-		(instances
-			(project ""
-				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/af60e1b9-0da5-42a6-8b56-df77791cfdef"
-					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 137.16 175.26 0)
 		(unit 1)
@@ -3905,7 +3733,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 137.16 129.54 0)
 			(effects
 				(font
@@ -4060,7 +3888,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 151.13 59.055 0)
 			(effects
 				(font
@@ -4109,6 +3937,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Audio:AudioJack2_Ground_Switch")
+		(at 252.73 86.36 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17e0f8e1-66a5-4c70-84b1-1db288f9cb73")
+		(property "Reference" "J9"
+			(at 257.81 84.4549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Mic In"
+			(at 257.81 86.9949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MyFootprints:3,5mm Jack Panel Socket 3-pole Switch large"
+			(at 252.73 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Grounded Sleeve, Switched Pole (Normalling)"
+			(at 252.73 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "G"
+			(uuid "5c2a5a68-79b8-480c-ba05-731c935aad5b")
+		)
+		(pin "TN"
+			(uuid "80572825-ae88-46f1-b96f-e9edeee54da4")
+		)
+		(pin "T"
+			(uuid "d6d5c74d-5659-4982-a6a4-2ec526c2c154")
+		)
+		(pin "SN"
+			(uuid "ab4c3cc9-466f-4e5a-95c6-0a4d83d68e55")
+		)
+		(pin "S"
+			(uuid "1477af87-3e55-40f2-bcdb-62ffee167009")
+		)
+		(instances
+			(project ""
+				(path "/d93537ee-5c24-4c3e-8ba0-9c6559a17368/af60e1b9-0da5-42a6-8b56-df77791cfdef"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "My_Parts:Dual_RCA_Jack")
 		(at 66.04 60.96 0)
 		(mirror x)
@@ -4134,7 +4042,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:pro-signal PSG01550 Dual 2× RCA Phono SocketRight Angle PCB"
 			(at 62.23 55.88 0)
 			(effects
 				(font
@@ -4205,7 +4113,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
 			(at 222.25 87.3252 0)
 			(effects
 				(font
@@ -4275,7 +4183,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 163.83 73.66 0)
 			(effects
 				(font
@@ -4361,7 +4269,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 120.65 62.738 90)
 			(effects
 				(font
@@ -4429,7 +4337,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 226.06 76.2 0)
 			(effects
 				(font
@@ -4499,7 +4407,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder"
 			(at 95.25 123.19 0)
 			(effects
 				(font
@@ -4567,7 +4475,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder"
 			(at 102.87 55.88 0)
 			(effects
 				(font
@@ -4637,7 +4545,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 84.7852 149.86 0)
 			(effects
 				(font
@@ -4707,7 +4615,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 96.2152 149.86 0)
 			(effects
 				(font
@@ -4777,7 +4685,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder"
 			(at 83.82 123.19 0)
 			(effects
 				(font
@@ -4913,7 +4821,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Relay_THT:Relay_SPDT_Omron_G5V-1"
 			(at 189.992 130.302 0)
 			(effects
 				(font
@@ -4996,7 +4904,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Relay_THT:Relay_SPDT_Omron_G5V-1"
 			(at 224.282 72.898 0)
 			(effects
 				(font
@@ -5144,7 +5052,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:pro-signal PSG01550 Dual 2× RCA Phono SocketRight Angle PCB"
 			(at 62.23 114.3 0)
 			(effects
 				(font
@@ -5217,7 +5125,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 75.8952 91.44 0)
 			(effects
 				(font
@@ -5287,7 +5195,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 109.982 43.18 90)
 			(effects
 				(font
@@ -5357,7 +5265,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder"
 			(at 74.93 69.85 0)
 			(effects
 				(font
@@ -5427,7 +5335,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 103.8352 73.66 0)
 			(effects
 				(font
@@ -5495,7 +5403,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 120.65 166.878 90)
 			(effects
 				(font
@@ -5563,7 +5471,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:3-pin JST Potentiometer"
 			(at 198.12 102.87 0)
 			(effects
 				(font
@@ -5701,7 +5609,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 139.7 167.005 0)
 			(effects
 				(font

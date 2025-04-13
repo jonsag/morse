@@ -6911,7 +6911,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 182.88 139.7 0)
 			(effects
 				(font
@@ -6999,7 +6999,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:2-pin JST Switch"
 			(at 35.56 53.34 0)
 			(effects
 				(font
@@ -7069,7 +7069,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 18.542 137.16 90)
 			(effects
 				(font
@@ -7205,7 +7205,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 50.4952 50.8 0)
 			(effects
 				(font
@@ -7275,7 +7275,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 41.6052 175.26 0)
 			(effects
 				(font
@@ -7343,7 +7343,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 53.34 32.0548 0)
 			(effects
 				(font
@@ -7411,7 +7411,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_HC49-SD"
 			(at 29.21 88.9 0)
 			(effects
 				(font
@@ -7611,7 +7611,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 35.56 33.02 0)
 			(effects
 				(font
@@ -7747,7 +7747,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 170.942 129.54 90)
 			(effects
 				(font
@@ -7817,7 +7817,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 153.162 179.07 90)
 			(effects
 				(font
@@ -7885,7 +7885,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 77.47 23.368 90)
 			(effects
 				(font
@@ -7955,7 +7955,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 49.022 137.16 90)
 			(effects
 				(font
@@ -8091,7 +8091,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 170.942 101.6 90)
 			(effects
 				(font
@@ -8225,7 +8225,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 29.21 77.978 90)
 			(effects
 				(font
@@ -8359,7 +8359,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 184.15 24.4348 0)
 			(effects
 				(font
@@ -8429,7 +8429,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 136.652 179.07 90)
 			(effects
 				(font
@@ -8497,7 +8497,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 35.56 21.59 0)
 			(effects
 				(font
@@ -8567,7 +8567,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 21.2852 101.6 0)
 			(effects
 				(font
@@ -8637,7 +8637,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 39.0652 101.6 0)
 			(effects
 				(font
@@ -8707,7 +8707,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 38.862 137.16 90)
 			(effects
 				(font
@@ -8777,7 +8777,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 51.7652 175.26 0)
 			(effects
 				(font
@@ -8846,7 +8846,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 182.88 111.76 0)
 			(effects
 				(font
@@ -8934,7 +8934,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 21.2852 175.26 0)
 			(effects
 				(font
@@ -9200,7 +9200,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyFootprints:2x3_ISP_header"
 			(at 201.93 71.12 0)
 			(effects
 				(font
@@ -9280,7 +9280,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 184.15 49.8348 0)
 			(effects
 				(font
@@ -9350,7 +9350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 28.702 137.16 90)
 			(effects
 				(font
@@ -9552,7 +9552,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 31.4452 175.26 0)
 			(effects
 				(font
@@ -9620,7 +9620,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 184.15 37.1348 0)
 			(effects
 				(font
@@ -9690,7 +9690,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_QFP:TQFP-100_14x14mm_P0.5mm"
 			(at 113.03 104.14 0)
 			(effects
 				(font
@@ -10054,7 +10054,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 77.47 33.02 0)
 			(effects
 				(font
@@ -10140,7 +10140,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 53.34 20.6248 0)
 			(effects
 				(font
